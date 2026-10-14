@@ -116,6 +116,7 @@ section { padding: 92px 0; }
 }
 .painel h3 { font-size: 1.9rem; margin-bottom: 14px; color: var(--amarelo); }
 .painel p { color: #f6e6e2; }
+.sobre .painel p { color: #fff4f1; font-size: 1.05rem; margin-bottom: 0; }
 .sobre h2 { font-size: clamp(1.9rem, 3.6vw, 2.6rem); margin-bottom: 18px; }
 .sobre p { margin-bottom: 16px; color: #4d2f37; }
 .selos { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
