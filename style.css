@@ -134,6 +134,9 @@ section { padding: 92px 0; }
 .contato p { max-width: 54ch; margin: 0 auto 32px; color: #f6e6e2; font-size: 1.1rem; }
 .contato .acoes { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
+.btn.grande { font-size: 1.05rem; padding: 16px 34px; }
+.contato p.nota { font-size: .85rem; opacity: .8; margin: 22px auto 0; max-width: 54ch; }
+
 /* Rodapé */
 footer { background: var(--vinho-noite); color: #d9b9bd; padding: 38px 0; font-size: .88rem; }
 footer .wrap { display: grid; gap: 10px; }

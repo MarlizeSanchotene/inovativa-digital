@@ -43,3 +43,7 @@ Site estático (HTML + CSS, sem build) da Inovativa Digital, de Marlize Sanchote
 - Logo em alta resolução (hoje há 174x187 px).
 - WhatsApp comercial: o site hoje só usa e-mail e Instagram. Se quiser o botão de WhatsApp, é só informar o número.
 - Mostrar ou não a associação ao Sindilojas (confirme com eles se há regra de uso da marca).
+
+## Link do formulário de briefing
+
+O botão do topo, o destaque da página inicial e a seção de contato apontam para o Google Formulário. Para trocar o link, procure no `index.html` por `docs.google.com/forms` (3 ocorrências) e substitua.
