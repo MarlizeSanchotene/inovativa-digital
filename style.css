@@ -92,6 +92,12 @@ section { padding: 92px 0; }
 .cartao h3 { font-size: 1.3rem; margin-bottom: 10px; }
 .cartao p { color: #5a3b43; font-size: .98rem; }
 
+.destaque { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-bottom: 22px; }
+.cartao.forte { background: linear-gradient(150deg, var(--vinho), var(--vinho-escuro)); color: #fff; border: none; padding: 38px 34px; }
+.cartao.forte h3 { font-size: 1.55rem; color: var(--amarelo); }
+.cartao.forte p { color: #f6e6e2; font-size: 1.02rem; }
+.cartao.forte .icone { background: var(--amarelo); color: var(--vinho-noite); }
+
 /* Passos */
 .passos { background: var(--vinho-noite); color: #fff; }
 .passos .titulo-secao p { color: #e9cfd1; }
@@ -137,7 +143,7 @@ footer .aviso { font-size: .8rem; opacity: .85; max-width: 90ch; }
 @media (max-width: 900px) {
   .hero .wrap, .sobre .wrap { grid-template-columns: 1fr; }
   .lampada { order: -1; width: 180px; }
-  .grade, .lista-passos { grid-template-columns: 1fr; }
+  .grade, .lista-passos, .destaque { grid-template-columns: 1fr; }
   nav ul li:not(:last-child) { display: none; }
   section { padding: 64px 0; }
   .hero { padding: 60px 0 72px; }
