@@ -19,19 +19,17 @@ Site estático (HTML + CSS, sem build) da Inovativa Digital, de Marlize Sanchote
 3. No GitHub: **Settings > Pages > Source: Deploy from a branch > main / (root)**.
 4. O site fica em `https://SEU_USUARIO.github.io/inovativa-digital/`.
 
-## Ligar o domínio (depois da compra)
+## Ligar o domínio inovativa.digital (Hostinger)
 
-1. Crie um arquivo chamado `CNAME` na raiz, com uma única linha: `inovativa.app`
-2. No painel de DNS do domínio:
-   - 4 registros `A` para `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - 1 registro `CNAME` para `www` apontando para `SEU_USUARIO.github.io`
-3. No GitHub Pages, marque **Enforce HTTPS** quando o certificado for liberado.
-
-## Domínio escolhido: inovativa.app
-
-- O `.app` só funciona com HTTPS. O GitHub Pages já entrega HTTPS, então sem problema.
-- Na compra, confira no checkout: o que está incluído no "gratuito por 1 ano", o valor da renovação e se há condição (como exigir um plano). Ative a renovação automática e crie um lembrete de calendário 60 dias antes do vencimento.
-- No Wix, o DNS é editado em **Domínios > (seu domínio) > Gerenciar registros DNS**. Siga os registros da seção anterior.
+1. O arquivo `CNAME` já está na raiz do projeto, com `inovativa.digital`.
+2. Recomendado: verifique o domínio no GitHub antes (no seu perfil: **Settings > Pages > Add a domain**). Ele pede um registro `TXT`, que você cria no mesmo painel de DNS do passo 3. Isso evita que outra pessoa se passe pelo seu domínio.
+3. Na Hostinger: **Domínios > inovativa.digital > Gerenciar > DNS / Servidores de nomes > Registros DNS**.
+   - Apague os registros `A` e `AAAA` do `@` e o `CNAME` do `www` que já existirem (são da página de estacionamento).
+   - Crie 4 registros `A` para `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - Crie 1 registro `CNAME` para `www` apontando para `SEU_USUARIO.github.io` (sem o nome do repositório).
+   - Deixe os servidores de nomes da própria Hostinger. Se estiverem apontando para outro lugar, os registros acima não valem.
+4. No GitHub: **Settings > Pages > Custom domain: inovativa.digital > Save**. Quando o certificado for liberado (pode levar de minutos a algumas horas), marque **Enforce HTTPS**.
+5. Renovação: na Hostinger, ative a renovação automática e anote a data de vencimento. Crie um lembrete de calendário 60 dias antes.
 
 ## Loja virtual (Nuvemshop)
 
