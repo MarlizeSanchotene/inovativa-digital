@@ -13,11 +13,11 @@ Site estático (HTML + CSS, sem build) da Inovativa Digital, de Marlize Sanchote
 1. Crie um repositório no GitHub (ex.: `inovativa-digital`).
 2. Na pasta do projeto:
    ```
-   git remote add origin https://github.com/SEU_USUARIO/inovativa-digital.git
+   git remote add origin https://github.com/MarlizeSanchotene/inovativa-digital.git
    git push -u origin main
    ```
 3. No GitHub: **Settings > Pages > Source: Deploy from a branch > main / (root)**.
-4. O site fica em `https://SEU_USUARIO.github.io/inovativa-digital/`.
+4. O site fica em `https://MarlizeSanchotene.github.io/inovativa-digital/`.
 
 ## Ligar o domínio inovativa.digital (Hostinger)
 
@@ -26,7 +26,7 @@ Site estático (HTML + CSS, sem build) da Inovativa Digital, de Marlize Sanchote
 3. Na Hostinger: **Domínios > inovativa.digital > Gerenciar > DNS / Servidores de nomes > Registros DNS**.
    - Apague os registros `A` e `AAAA` do `@` e o `CNAME` do `www` que já existirem (são da página de estacionamento).
    - Crie 4 registros `A` para `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - Crie 1 registro `CNAME` para `www` apontando para `SEU_USUARIO.github.io` (sem o nome do repositório).
+   - Crie 1 registro `CNAME` para `www` apontando para `MarlizeSanchotene.github.io` (sem o nome do repositório).
    - Deixe os servidores de nomes da própria Hostinger. Se estiverem apontando para outro lugar, os registros acima não valem.
 4. No GitHub: **Settings > Pages > Custom domain: inovativa.digital > Save**. Quando o certificado for liberado (pode levar de minutos a algumas horas), marque **Enforce HTTPS**.
 5. Renovação: na Hostinger, ative a renovação automática e anote a data de vencimento. Crie um lembrete de calendário 60 dias antes.
